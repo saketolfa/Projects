@@ -12,7 +12,7 @@ app_mode = st.sidebar.selectbox('Select page' , ['Home', 'Prediction'])
 if app_mode == 'Home':
     st.markdown("<h1 style='text-align: center; color: grey;'>Welcome to  loan prediction </h1>", unsafe_allow_html=True)
     # Home image
-    image = Image.open('loan_image.jpg' ,'rb')
+    image = Image.open('https://github.com/saketolfa/Projects/blob/main/LoanPredictionApplcation/loan_image.jpg')
     width, heigth = image.size
     image = image.resize((width, heigth // 2))
     st.image(image)
@@ -34,7 +34,7 @@ if app_mode == 'Home':
 elif app_mode=='Prediction':
     st.markdown("<h1 style='text-align: center; color: grey;'>Let's doing some prediction</h1>", unsafe_allow_html=True)
     # Prediction image
-    image = Image.open('prediction_image.jpg','rb') 
+    image = Image.open('https://github.com/saketolfa/Projects/blob/main/LoanPredictionApplcation/prediction_image.jpg') 
     width, heigth = image.size
     image = image.resize((width + 300, heigth //2 ))
     st.image(image)
